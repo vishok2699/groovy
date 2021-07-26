@@ -7,7 +7,7 @@ stages{
         steps{
             script{
                 echo "inside QA"
-                'sh /home/vishok/shell.sh'
+                'sh /home/vishok/shell.sh $Name $LastName'
             }
         }
     

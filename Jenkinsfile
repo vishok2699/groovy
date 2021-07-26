@@ -5,10 +5,10 @@ stages{
     stage('QA'){
     agent { node { label 'master' } } 
         steps{
-            //script{
+            script{
                 echo "inside QA"
-                'sh /home/vishok/shell.sh $Name $LastName'
-            //}
+                '$Name $LastName'
+            }
         }
     
     }

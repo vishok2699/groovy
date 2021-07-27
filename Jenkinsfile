@@ -1,9 +1,8 @@
 #!/usr/bin/env groovy
 pipeline {
-    agent none
+    agent{ label 'master' }
 stages{
     stage('QA'){
-    agent { node { label 'master' } } 
         steps{
             script{
                 echo "inside QA"
@@ -12,8 +11,7 @@ stages{
         }
     
     }
-    stage('stable'){
-    agent { node {label 'master'} } 
+    stage('stable'){ 
         steps {
             script{
                 echo "inside stable"

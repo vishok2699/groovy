@@ -7,13 +7,13 @@ stages{
         steps{
             script{
                 echo "inside QA"
-                'sh /home/vishok/shell.sh $Name $LastName'
+                sh '/home/vishok/Downloads/shell.sh $Name $LastName'
             }
         }
     
     }
     stage('stable'){
-    agent { node {label 'newnode'} } 
+    agent { node {label 'master'} } 
         steps {
             script{
                 echo "inside stable"

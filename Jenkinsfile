@@ -15,7 +15,7 @@ stages{
         steps {
             script{
                 echo "inside stable"
-                echo "inside GROOVY $Name"
+                echo "inside GROOVY "
             }
             }
         

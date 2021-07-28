@@ -11,15 +11,6 @@ stages{
         }
     
     }
-    stage('stable'){ 
-        steps {
-            script{
-                echo "inside stable"
-                echo "inside GROOVY $Name"
-            }
-            }
-        
-    }
 
 }
 }
